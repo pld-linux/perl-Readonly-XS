@@ -8,7 +8,7 @@
 Summary:	Readonly::XS - Companion module for Readonly.pm, to speed up read-only scalar variables
 Name:		perl-Readonly-XS
 Version:	1.05
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -71,7 +71,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorarch}/Readonly/
 %{perl_vendorarch}/Readonly/*.pm
+%dir %{perl_vendorarch}/auto/Readonly
 %dir %{perl_vendorarch}/auto/Readonly/XS
 %{perl_vendorarch}/auto/Readonly/XS/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Readonly/XS/*.so
