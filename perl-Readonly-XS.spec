@@ -75,6 +75,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Readonly/*.pm
 %dir %{perl_vendorarch}/auto/Readonly
 %dir %{perl_vendorarch}/auto/Readonly/XS
-%{perl_vendorarch}/auto/Readonly/XS/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Readonly/XS/*.so
 %{_mandir}/man3/*
