@@ -4,7 +4,6 @@
 #
 %define		pdir	Readonly
 %define		pnam	XS
-%include	/usr/lib/rpm/macros.perl
 Summary:	Readonly::XS - Companion module for Readonly.pm, to speed up read-only scalar variables
 Name:		perl-Readonly-XS
 Version:	1.05
